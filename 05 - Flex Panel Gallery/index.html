@@ -6,6 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <link rel="icon" href="https://fav.farm/🔥" />
   <link rel="stylesheet" href="styles.css">
+  <script src="./index.js"></script>
 </head>
 <body>
   
@@ -37,24 +38,7 @@
     </div>
   </div>
 
-  <script>
-    const panels = document.querySelectorAll('.panel');
 
-    function toggleOpen(){
-      this.classList.toggle('open');
-    }
-
-    function toggleOpenActive(e){
-      if (e.propertyName.includes('flex')) { // it could be "flex" or "flex-grow" depending on the browser
-        this.classList.toggle('open-active');
-      }
-      
-    }
-
-    panels.forEach(el=> el.addEventListener('click', toggleOpen));
-    panels.forEach(el=> el.addEventListener('transitionend', toggleOpenActive));
-
-  </script>
 
 
 

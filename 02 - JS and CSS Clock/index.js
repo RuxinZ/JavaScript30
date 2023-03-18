@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const now = new Date();
 
     const second = now.getSeconds();
-    const secondDegrees = (second / 60) * 360 ; // offset the 90 degrees used to set the hand starting at 12:00 position
+    const secondDegrees = (second / 60) * 360 ; 
     if (secondDegrees === 0) secondHand.style.transition = 'all 0s';
     else secondHand.style.transition = 'all .5s';
     secondHand.style.transform = `rotate(${secondDegrees}deg)`;
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let h = hands[i];
       const degreeName = hands[i].substring(0, hands[i].indexOf("Hand"));
 
-      // h.style.transform =`rotate`
     }
 
 
